@@ -138,7 +138,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           quantity: 1,
         }
       ],
-      success_url: `${BASE_URL}/thank-you?p=true`,
+      success_url: `${BASE_URL}/thank-you`,
       cancel_url: `${BASE_URL}/cancel`,
       metadata: {
         type: "subscription",
