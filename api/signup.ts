@@ -53,7 +53,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(200).json({ success: false, message: "You’re already subscribed to this Paath. If you’re not seeing any emails, please check your spam folder." });
     }
 
-  let subscriptionId = "";
+  let subscriptionId = existingSub?.id || "";
 
   if (!existingSub) {
     const { data: subscriptionData, error: subError } = await supabase
@@ -62,7 +62,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
         user_id: user.id,
         path_id,
         delivery_method,
-        status: "active",
+        status: "pending",
         current_day: 0,
         secure_token: secureToken,
         unsubscribe_token: unsubscribeToken,
@@ -102,12 +102,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     }
 
   // 4️⃣ Handle free subscription
-  if (subscription_type === "free") {
-    return res.json({
-      success: true,
-      message: "Subscription created. Reflections will start from tomorrow."
-    });
-  }
+  // if (subscription_type === "free") {
+  //   return res.json({
+  //     success: true,
+  //     message: "Subscription created. Reflections will start from tomorrow."
+  //   });
+  // }
 
   // 5️⃣ Handle paid subscription (support / donation)
   if (subscription_type === "paid") {
