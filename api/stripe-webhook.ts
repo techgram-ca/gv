@@ -80,10 +80,10 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           return res.status(400).send("Subscription not found");
         }
 
-        // Mark subscription as paid
+        // Mark subscription as paid and active
         const { error: subUpdateError } = await supabase
           .from("subscriptions")
-          .update({ is_paid: true })
+          .update({ is_paid: true, status: "active" })
           .eq("id", subscription.id);
 
         if (subUpdateError) {
