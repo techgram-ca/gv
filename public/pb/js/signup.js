@@ -52,22 +52,14 @@ signupForm.addEventListener("submit", (e) => {
     submitButton.textContent = "Processing...";
 
     const action = e.submitter.dataset.action;
-    let deliveryMethod = document.querySelector('input[name="delivery"]:checked')?.value || 'email';
-    // Set email or phone to null based on delivery method
-    let emailValue = signupForm.email?.value || null;
-    let phoneValue = signupForm.phone?.value || null;
-
-    if (deliveryMethod === 'email') {
-        phoneValue = null;
-    } else if (deliveryMethod === 'sms') {
-        emailValue = null;
-    }
+    const deliveryMethod = 'email';
+    const emailValue = signupForm.email?.value || null;
 
     submitSignup({
         path_id: signupForm.path?.value || '',
         name: signupForm.name?.value || '',
         email: emailValue,
-        phone: phoneValue,
+        phone: null,
         delivery_method: deliveryMethod,
         subscription_type: action === 'paid' ? 'paid' : 'free',
     }, originalText, submitButton);
@@ -178,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 /* End of Smooth Scrolling Logic */
 
 /* Delivery Method Toggle Logic */
+/*
 const deliveryRadios = document.querySelectorAll(".delivery-radio");
 const emailField = document.getElementById("emailField");
 const phoneField = document.getElementById("phoneField");
@@ -205,6 +198,7 @@ const checkedRadio = document.querySelector(".delivery-radio:checked");
 if (checkedRadio) {
     checkedRadio.dispatchEvent(new Event("change"));
 }
+*/
 /* End of Delivery Method Toggle Logic */
 
 /* Update Paid Button Text Based on Selected Path */
@@ -224,6 +218,7 @@ pathSelect.addEventListener('change', () => {
 /* End of Delivery Method Toggle Logic */
 
 /* Delivery method radio button styling */
+/*
 document.addEventListener('DOMContentLoaded', function() {
     const radioInputs = document.querySelectorAll('.delivery-radio');
     radioInputs.forEach(radio => {
@@ -243,6 +238,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     radioInputs[0].dispatchEvent(new Event('change'));
 });
+*/
 /* End of Custom Radio Button Logic */
 
 /* Terms and Conditions Checkbox Logic */

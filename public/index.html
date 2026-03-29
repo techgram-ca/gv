@@ -389,6 +389,7 @@ Don’t just read Gurbani.<br>
                         </div>
 
                         <!-- Delivery Preference -->
+                        <!--
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-3">Delivery Preference</label>
                             <div class="flex gap-6">
@@ -412,40 +413,39 @@ Don’t just read Gurbani.<br>
                                 </label>
                             </div>
                         </div>
+                        -->
 
-                        <!-- Email Field (shown only if delivery=email) -->
-                        <div id="emailField" class="hidden">
+                        <!-- Email Field -->
+                        <div id="emailField">
                             <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-900" placeholder="your@email.com">
+                            <input type="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-900" placeholder="your@email.com" required>
                             <p class="text-xs text-gray-500 mt-2">
                                 You may receive emails in your Promotions tab or Spam folder. Please move it to your Inbox to ensure you don’t miss any updates.
                             </p>
                         </div>
 
-                        <!-- Phone Field (shown only if delivery=sms) -->
+                        <!-- Phone Field (SMS) -->
+                        <!--
                         <div id="phoneField" class="hidden">
                             <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                             <div class="flex gap-2">
-                                <!-- Country code dropdown -->
                                 <select name="countryCode" class="px-3 py-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-900">
                                     <option value="+1">+1</option>
                                 </select>
-                                <!-- Number input -->
                                 <input type="tel" name="phone" class="flex-1 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 focus:border-gray-900" placeholder="Your phone number">
                             </div>
-                            <!-- Info message -->
                             <p class="text-xs text-gray-500 mt-2">
                                 Due to high international messaging costs, <b>our SMS service is available for Canada only.</b> Other countries will be supported soon.
                             </p>
                         </div>
+                        -->
 
                         <div class="mt-6">
                             <label class="flex items-start gap-3 text-sm text-gray-700 cursor-pointer">
                                 <input id="termsCheckbox" type="checkbox" class="mt-1 w-4 h-4 border-gray-300 rounded focus:ring-2 focus:ring-gray-200">
                                 <span>
-                                I agree to receive daily Gurbani messages via SMS and/or email. Message frequency: 1/day.  
-                                Reply STOP to unsubscribe.  
-                                I agree to the 
+                                I agree to receive daily Gurbani messages via email. Message frequency: 1/day.
+                                I agree to the
                                 <a href="/terms-and-conditions" target="_blank" class="underline text-gray-900 hover:text-black">Terms & Conditions</a> 
                                 and 
                                 <a href="/privacy-policy" target="_blank" class="underline text-gray-900 hover:text-black">Privacy Policy</a>.
@@ -457,16 +457,18 @@ Don’t just read Gurbani.<br>
                         <div class="bg-gray-50 p-6 rounded-lg">
                             <h3 class="font-medium text-gray-900 mb-3">Pricing & Support</h3>
                             <p class="text-sm text-gray-700 mb-4">
-                                Your contributions help us maintain this platform and create more Paaths. However, we believe Gurbani guidance should be accessible to all, regardless of financial situation.
+                                Your contributions help us maintain this platform and create more Paaths. By supporting us, you help ensure Gurbani guidance remains accessible to all.
                             </p>
                             <div id="errorContainer" class="hidden text-red-600 text-sm mb-4"></div>
                             <div class="flex flex-col sm:flex-row gap-3">
+                                <!--
                                 <button type="submit" data-action="free" disabled
   class="flex-1 py-3 px-6 border-2 border-gray-300 text-gray-700 font-medium !rounded-button
          hover:border-gray-600 hover:bg-gray-50 transition-colors whitespace-nowrap
          disabled:opacity-50 disabled:cursor-not-allowed">
   Subscribe for Free
 </button>
+                                -->
                                 <button type="submit" data-action="paid" disabled
   class="flex-1 py-3 px-6 bg-primary text-white font-medium !rounded-button
          hover:bg-gray-800 transition-colors whitespace-nowrap
