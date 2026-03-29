@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.91.0",
+    "resend": "^6.8.0",
+    "stripe": "^20.2.0",
+    "twilio": "^5.11.2"
+  },
+  "devDependencies": {
+    "@vercel/node": "^5.5.25"
+  }
+}

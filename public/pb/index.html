@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ਗੁਰਬਾਣੀ ਦੀ ਸਮਝ</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1XLK5ZLRQ9"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-1XLK5ZLRQ9');
+    </script>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        colors: {
+        primary: '#000000',
+        secondary: '#374151'
+        },
+        borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+        },
+        fontFamily: {
+        'inter': ['Inter', 'sans-serif']
+        }
+        }
+        }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        body { font-family: 'Inter', sans-serif; }
+        .faq-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+        .faq-item.active .faq-content { max-height: 600px; }
+        .faq-icon { transition: transform 0.3s ease-out; flex-shrink: 0; }
+        .faq-item.active .faq-icon { transform: rotate(180deg); }
+    </style>
+    <script src="js/signup.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-900">
+   <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-semibold text-gray-900">
+                    <img class="w-24 h-auto" src="images/logo.png" alt="ਗੁਰਬਾਣੀ ਵਿਆਖਿਆ ਲੋਗੋ"/>
+                </div>
+
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#understanding-gurbani" class="text-gray-600 hover:text-gray-900 transition-colors">ਗੁਰਬਾਣੀ ਦੀ ਸਮਝ</a>
+                    <a href="#choose-path" class="text-gray-600 hover:text-gray-900 transition-colors">ਪਾਠ</a>
+                    <a href="#faqs" class="text-gray-600 hover:text-gray-900 transition-colors">ਸਵਾਲ-ਜਵਾਬ</a>
+                    <a href="#signup" class="text-gray-600 hover:text-gray-900 transition-colors">ਯਾਤਰਾ ਸ਼ੁਰੂ ਕਰੋ</a>
+                </div>
+
+                <div class="relative flex items-center gap-3 md:hidden">
+                    <button id="mobile-menu-btn" class="w-10 h-10 flex items-center justify-center text-gray-600 hover:text-gray-900 transition-colors">
+                        <i class="ri-menu-line text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg transform -translate-y-full opacity-0 invisible transition-all duration-300">
+                <div class="px-6 py-4 space-y-4">
+                    <a href="#understanding-gurbani" class="block text-gray-600 hover:text-gray-900 transition-colors py-2 mobile-nav-link">ਗੁਰਬਾਣੀ ਦੀ ਸਮਝ</a>
+                    <a href="#choose-path" class="block text-gray-600 hover:text-gray-900 transition-colors py-2 mobile-nav-link">ਪਾਠ</a>
+                    <a href="#faqs" class="block text-gray-600 hover:text-gray-900 transition-colors py-2 mobile-nav-link">ਸਵਾਲ-ਜਵਾਬ</a>
+                    <a href="#signup" class="block text-gray-600 hover:text-gray-900 transition-colors py-2 mobile-nav-link">ਯਾਤਰਾ ਸ਼ੁਰੂ ਕਰੋ</a>
+                </div>
+            </div>
+        </div>
+   </nav>
+
+   <!-- Hero -->
+   <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="relative z-10 w-full max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-light text-gray-900 mb-6 leading-tight">
+                ਗੁਰਬਾਣੀ ਸਿਰਫ਼ ਪੜ੍ਹੋ ਨਾ ।<br>
+                <span class="text-primary font-medium">ਜਿੰਦਗੀ ਦਾ ਹਿੱਸਾ ਬਣਾਓ ।</span>
+            </h1>
+            <p class="text-xl text-gray-700 mb-8 leading-relaxed max-w-3xl mx-auto">
+                ਹਰ ਦਿਨ ਗੁਰਬਾਣੀ ਦੀ ਇੱਕ ਪਉੜੀ, ਭਾਗ ਜਾਂ ਸ਼ਬਦ ਪ੍ਰਾਪਤ ਕਰੋ — ਅਰਥ ਅਤੇ ਵਿਆਖਿਆ ਪੰਜਾਬੀ ਅਤੇ ਅੰਗਰੇਜ਼ੀ ਵਿੱਚ — ਤਾਂ ਜੋ ਤੁਸੀਂ ਉਸ ਨੂੰ ਸੱਚਮੁੱਚ ਸਮਝ ਸਕੋ ਅਤੇ ਰੋਜ਼ਾਨਾ ਜੀਵਨ ਵਿੱਚ ਅਪਣਾ ਸਕੋ।
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#choose-path"><button class="px-8 py-4 bg-primary text-white font-medium !rounded-button hover:bg-gray-800 transition-colors whitespace-nowrap">
+                    ਆਪਣੀ ਯਾਤਰਾ ਸ਼ੁਰੂ ਕਰੋ
+                </button></a>
+                <a href="/todays-path"><button class="px-8 py-4 border-2 border-gray-400 text-gray-800 font-medium !rounded-button hover:border-gray-600 hover:bg-gray-50 transition-colors whitespace-nowrap">
+                    ਰੋਜ਼ਾਨਾ ਉਦਾਹਰਨ ਵੇਖੋ
+                </button></a>
+            </div>
+        </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-gray-600 text-sm">
+                    © 2026 ਗੁਰਬਾਣੀ ਵਿਆਖਿਆ। ਸਾਰੇ ਅਧਿਕਾਰ ਰਾਖਵੇਂ ਹਨ।
+                </div>
+                <div class="flex items-center gap-8">
+                    <a href="#faqs" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">ਸਵਾਲ-ਜਵਾਬ</a>
+                    <a href="mailto:info@gurbanivyakhya.com" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">ਸੰਪਰਕ ਕਰੋ</a>
+                    <a href="/privacy-policy" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">ਪਰਾਈਵੇਸੀ</a>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>

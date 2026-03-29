@@ -1,0 +1,22 @@
+{
+  "rewrites": [
+    {
+      "source": "/todays-path/:token",
+      "destination": "/todays-path"
+    },
+    {
+      "source": "/todays-path/:token/:day",
+      "destination": "/todays-path"
+    },
+     {
+      "source": "/unsubscribe/:token",
+      "destination": "/unsubscribe"
+    }
+  ],
+   "crons": [
+    {
+      "path": "/api/cron/daily",
+      "schedule": "0 6 * * *"
+    }
+  ]
+}

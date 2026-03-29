@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding Gurbani</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+        theme: {
+        extend: {
+        colors: {
+        primary: '#000000',
+        secondary: '#374151'
+        },
+        borderRadius: {
+        'none': '0px',
+        'sm': '4px',
+        DEFAULT: '8px',
+        'md': '12px',
+        'lg': '16px',
+        'xl': '20px',
+        '2xl': '24px',
+        '3xl': '32px',
+        'full': '9999px',
+        'button': '8px'
+        },
+        fontFamily: {
+        'inter': ['Inter', 'sans-serif']
+        }
+        }
+        }
+        }
+    </script>
+    <style>
+        :where([class^="ri-"])::before {
+        content: "\f3c2";
+        }
+        body {
+        font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script src="/todays-path/js/todays-path.js" defer></script>
+</head>
+
+<body class="bg-white text-gray-900">
+
+  <!-- Loader -->
+  <div id="loader" class="min-h-screen flex items-center justify-center text-gray-600">
+    Loading...
+  </div>
+
+  <!-- Message / Error -->
+  <div id="messageBox" class="hidden min-h-screen flex items-center justify-center px-6">
+    <div class="max-w-md text-center bg-gray-50 border border-gray-200 rounded-lg p-6 text-gray-800"></div>
+  </div>
+
+  <!-- Page Content (hidden initially) -->
+  <div id="pageContent" class="hidden">
+
+    <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="text-2xl font-semibold text-gray-900">
+                <a href="/"><img class="w-24 h-auto" src="../../images/logo.png" alt="Gurbani Vyakhya Logo"/></a>
+            </div>
+        </div>
+      </div>
+    </nav>
+      <section id="how-it-works" class="bg-white">
+        <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-sm p-8">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-medium text-gray-900 mb-2">Today's Path</h3>
+                    <p id="gurbani_header" class="text-sm text-gray-600">Mool Mantar</p>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <p id="gurbani" class="text-black text-2xl italic text-center bg-gray-50 p-4 rounded border-l-4 border-gray-800">
+                            "ੴ ਸਤਿ ਨਾਮੁ ਕਰਤਾ ਪੁਰਖੁ <br>
+                                ਨਿਰਭਉ ਨਿਰਵੈਰੁ <br>
+                                ਅਕਾਲ ਮੂਰਤਿ ਅਜੂਨੀ ਸੈਭੰ <br>
+                                ਗੁਰ ਪ੍ਰਸਾਦਿ ॥"
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-2xl text-gray-900 mb-2 flex items-center gap-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                        <i class="ri-lightbulb-line text-gray-600"></i>
+                        </div>
+                        ਪੰਜਾਬੀ ਵਿੱਚ ਵਿਆਖਿਆ
+                        </h4>
+                                                <p id="pb" class="text-gray-800">
+                            <b>ੴ (ਇੱਕ ਓਅੰਕਾਰ)</b><br>
+                                ਮੂਲ ਮੰਤਰ ਸਾਨੂੰ ਇਹ ਯਾਦ ਦਿਵਾਉਂਦਾ ਹੈ ਕਿ ਸਾਰਾ ਸੰਸਾਰ ਇੱਕ ਹੀ ਅਕਾਲ ਸੱਚ ਤੋਂ ਜੰਮਿਆ ਹੈ। ਉਹ ਸੱਚ ਜੋ ਹਰ ਥਾਂ ਮੌਜੂਦ ਹੈ, ਜੋ ਹਰ ਸਾਹ ਨਾਲ ਸਾਡੇ ਅੰਦਰ ਵੱਸਦਾ ਹੈ। ਉਹ ਕਿਸੇ ਇਕ ਥਾਂ ਜਾਂ ਰੂਪ ਤੱਕ ਸੀਮਿਤ ਨਹੀਂ, ਸਗੋਂ ਸਾਰੀ ਰਚਨਾ ਵਿੱਚ ਰਮਿਆ ਹੋਇਆ ਹੈ।
+                                <br><br>
+                                <b>ਸਤਿ ਨਾਮੁ (Sat Naam)</b><br>
+                                ਦੁਨੀਆ ਵਿੱਚ ਸਭ ਕੁਝ ਬਦਲਦਾ ਹੈ ਅਤੇ ਨਾਸ਼ਵਾਨ ਹੈ, ਪਰ ਪਰਮਾਤਮਾ ਹੀ ਇੱਕ ਅਜਿਹੀ ਹਸਤੀ ਹੈ ਜੋ ਅਟੱਲ ਹੈ। ਉਸਦਾ 'ਨਾਮ' ਹੀ ਉਸਦੀ ਪਛਾਣ ਹੈ, ਅਤੇ ਉਹ ਪਛਾਣ 'ਸੱਚ' ਹੈ—ਜੋ ਕਦੇ ਝੂਠ ਨਹੀਂ ਹੋ ਸਕਦਾ, ਜੋ ਕਦੇ ਮਿਟ ਨਹੀਂ ਸਕਦਾ।
+                                <br><br>
+                                <b>ਕਰਤਾ ਪੁਰਖੁ (Karta Purakh)</b><br>
+                                ਉਹ ਸਿਰਫ਼ ਦੁਨੀਆ ਬਣਾ ਕੇ ਦੂਰ ਨਹੀਂ ਬੈਠਾ, ਸਗੋਂ 'ਪੁਰਖੁ' ਹੋ ਕੇ ਹਰ ਜੀਵ ਵਿੱਚ ਮੌਜੂਦ ਹੈ। ਸਾਰੀ ਸ੍ਰਿਸ਼ਟੀ ਦਾ ਅਸਲ ਕਰਤਾ (Doer) ਉਹੀ ਹੈ। ਪੱਤਾ ਵੀ ਉਸਦੇ ਹੁਕਮ ਬਿਨਾਂ ਨਹੀਂ ਹਿੱਲਦਾ।
+                                <br><br>
+                                <b>ਨਿਰਭਉ (Nirbhau)</b><br>
+                                ਉਸਨੂੰ ਕਿਸੇ ਦਾ ਡਰ ਨਹੀਂ ਹੈ ਕਿਉਂਕਿ ਉਸਤੋਂ ਵੱਡਾ ਕੋਈ ਨਹੀਂ ਹੈ। ਉਹ ਸਰਵ-ਸ਼ਕਤੀਮਾਨ ਹੈ। ਜਦੋਂ ਕੋਈ ਦੂਜਾ ਹੈ ਹੀ ਨਹੀਂ, ਤਾਂ ਡਰ ਕਿਸਦਾ?
+                                <br><br>
+                                <b>ਨਿਰਵੈਰੁ (Nirvair)</b><br>
+                                ਕਿਉਂਕਿ ਸਾਰੇ ਜੀਵ ਉਸੇ ਦੇ ਬਣਾਏ ਹੋਏ ਹਨ ਅਤੇ ਉਹ ਸਭ ਵਿੱਚ ਵੱਸਦਾ ਹੈ, ਇਸ ਲਈ ਉਹ ਕਿਸੇ ਨਾਲ ਨਫ਼ਰਤ ਨਹੀਂ ਕਰਦਾ। ਉਹ ਸਭ ਦਾ ਸਾਂਝਾ ਪਿਤਾ ਹੈ। (ਜੋ ਨਿਰਭਉ ਹੁੰਦਾ ਹੈ, ਉਹੀ ਨਿਰਵੈਰ ਹੋ ਸਕਦਾ ਹੈ)।
+                                <br><br>
+                                <b>ਅਕਾਲ ਮੂਰਤਿ (Akaal Moorat)</b><br>
+                                ਉਸਦਾ ਸਰੂਪ (ਹਸਤੀ) ਸਮੇਂ ਦੇ ਪ੍ਰਭਾਵ ਤੋਂ ਮੁਕਤ ਹੈ। 'ਅਕਾਲ' ਦਾ ਅਰਥ ਹੈ ਮੌਤ/ਸਮੇਂ ਤੋਂ ਰਹਿਤ ਅਤੇ 'ਮੂਰਤਿ' ਦਾ ਅਰਥ ਹੈ ਹਸਤੀ। ਉਹ ਕਦੇ ਬੁੱਢਾ ਨਹੀਂ ਹੁੰਦਾ, ਉਸਨੂੰ ਮੌਤ ਨਹੀਂ ਆਉਂਦੀ।
+                                <br><br>
+                                <b>ਅਜੂਨੀ (Ajooni)</b><br>
+                                ਰੱਬ ਮਾਂ ਦੇ ਪੇਟ ਤੋਂ ਜਨਮ ਨਹੀਂ ਲੈਂਦਾ। ਉਹ ਅਵਤਾਰਵਾਦ ਤੋਂ ਵੱਖਰਾ ਹੈ। ਉਹ ਜਨਮ ਅਤੇ ਮੌਤ ਦੇ ਗੇੜ ਤੋਂ ਮੁਕਤ ਹੈ।
+                                <br><br>
+                                <b>ਸੈਭੰ (Saibhang)</b><br>
+                                ਉਸਨੂੰ ਕਿਸੇ ਮਾਂ-ਪਿਓ ਜਾਂ ਕਿਸੇ ਹੋਰ ਨੇ ਨਹੀਂ ਬਣਾਇਆ। ਉਹ ਆਪਣੇ ਆਪ ਤੋਂ ਪ੍ਰਗਟ ਹੋਇਆ ਹੈ (ਸਯੰ ਭਵ)। ਉਹ ਆਪਣਾ ਸਹਾਰਾ ਆਪ ਹੈ, ਉਹ ਸਵੈ-ਪ੍ਰਕਾਸ਼ਿਤ ਹੈ।
+                                <br><br>
+                                <b>ਗੁਰ ਪ੍ਰਸਾਦਿ (Gur Prasad)</b><br>
+                                ਇਹਨਾਂ ਸਾਰੇ ਗੁਣਾਂ ਵਾਲੇ ਪਰਮਾਤਮਾ ਦੀ ਪ੍ਰਾਪਤੀ ਮਨੁੱਖੀ ਚਤੁਰਾਈ ਜਾਂ ਕਰਮ-ਕਾਂਡਾਂ ਨਾਲ ਨਹੀਂ ਹੁੰਦੀ, ਸਗੋਂ ਪੂਰੇ ਗੁਰੂ ਦੀ ਰਹਿਮਤ (ਪ੍ਰਸਾਦਿ) ਨਾਲ ਹੁੰਦੀ ਹੈ। ਇਹ ਗਿਆਨ ਦਾ ਪ੍ਰਕਾਸ਼ ਗੁਰੂ ਦੁਆਰਾ ਮਿਲਦਾ ਹੈ।
+                                <br><br>
+                                <b>॥ ਜਪੁ ॥ (JAP)</b><br>
+                                ਇਹ ਗੁਰੂ ਗ੍ਰੰਥ ਸਾਹਿਬ ਜੀ ਦੀ ਪਹਿਲੀ ਬਾਣੀ ਦਾ ਨਾਮ ਹੈ। ਇਹ ਇੱਕ ਹੁਕਮ ਵੀ ਹੈ—ਕਿ ਹੇ ਮਨੁੱਖ! ਉੱਪਰ ਦੱਸੇ ਪਰਮਾਤਮਾ ਨੂੰ 'ਜਪ', ਉਸਦਾ ਧਿਆਨ ਧਰ, ਤਾਂ ਹੀ ਤੂੰ ਸਚਿਆਰ ਹੋਵੇਂਗਾ।
+                                <br><br>
+                                ਮੂਲ ਮੰਤਰ ਸਿੱਖ ਧਰਮ ਦੀ ਪੂਰੀ ਆਤਮਕ ਨੀਂਹ ਹੈ। ਇਸ ਵਿੱਚ ਗੁਰੂ ਨਾਨਕ ਸਾਹਿਬ ਸਪਸ਼ਟ ਕਰਦੇ ਹਨ ਕਿ ਪਰਮਾਤਮਾ ਇਕੋ ਹੈ, ਸਦਾ ਰਹਿਣ ਵਾਲਾ ਸੱਚ ਹੈ ਅਤੇ ਹਰ ਪਲ ਸ੍ਰਿਸ਼ਟੀ ਵਿੱਚ ਕਰਿਆਸ਼ੀਲ ਹੈ। ਉਹ ਡਰ ਅਤੇ ਵੈਰ ਤੋਂ ਰਹਿਤ ਹੈ, ਸਮੇਂ ਤੋਂ ਪਰੇ ਹੈ ਅਤੇ ਕਿਸੇ ਜਨਮ ਨਾਲ ਬੰਧਿਆ ਨਹੀਂ। ਮਨੁੱਖ ਦੀ ਅਸਲ ਸਮੱਸਿਆ ਇਹ ਹੈ ਕਿ ਉਹ ਅਸਥਾਈ ਚੀਜ਼ਾਂ ਨੂੰ ਸਥਾਈ ਮੰਨ ਲੈਂਦਾ ਹੈ। ਗੁਰੂ ਦੀ ਕਿਰਪਾ ਨਾਲ ਜਦੋਂ ਇਹ ਸੁਰਤ ਪੈਦਾ ਹੁੰਦੀ ਹੈ, ਤਦੋਂ ਜੀਵਨ ਅਹੰਕਾਰ ਤੋਂ ਸੱਚ ਵੱਲ ਮੁੜ ਜਾਂਦਾ ਹੈ।<br>
+                                ਮੂਲ ਮੰਤਰ ਸਿਰਫ਼ ਪੜ੍ਹਨ ਲਈ ਨਹੀਂ,
+                                ਇਹ ਜੀਣ ਲਈ ਹੈ।
+                                ਇਹ ਸਾਨੂੰ ਯਾਦ ਦਿਵਾਉਂਦਾ ਹੈ ਕਿ ਅਸੀਂ ਕੌਣ ਹਾਂ,
+                                ਅਤੇ ਅਸੀਂ ਕਿਸ ਨਾਲ ਜੁੜੇ ਹੋਏ ਹਾਂ।
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-2xl text-gray-900 mb-2 flex items-center gap-2">
+                        <div class="w-4 h-4 flex items-center justify-center">
+                        <i class="ri-lightbulb-line text-gray-800"></i>
+                        </div>
+                        Explanation in English
+                        </h4>
+                        <p id="en" class="text-gray-800">
+                            <b>Ik Onkar (One Universal Creator)</b><br>
+                                Mool Mantar reminds us that the entire universe flows from one eternal truth. A truth that is present everywhere, living within every breath we take. It is not limited to one place or form, but quietly exists throughout all of creation.
+                                <br><br>
+                                <b>Sat Naam (True Name/Identity)</b><br>
+                                'Sat' means Truth—that which exists forever. While the world is an illusion (Maya) that changes, God is the only Eternal Truth. His very identity is Existence.
+                                <br><br>
+                                <b>Karta Purakh (Creative Being)</b><br>
+                                He is the Creator (Karta) who is actively present (Purakh) in His creation. He is not a distant God observing from the sky; He is the energy within everything.
+                                <br><br>
+                                <b>Nirbhau (Without Fear)</b><br>
+                                God governs the universe but fears no one, as there is no power superior to Him. He is the Absolute Sovereign.
+                                <br><br>
+                                <b>Nirvair (Without Hate/Enmity)</b><br>
+                                Since God is in everyone, He cannot hate anyone. Hate stems from fear or 'otherness', but for God, everyone is His creation.
+                                <br><br>
+                                <b>Akaal Moorat (Timeless Form)</b><br>
+                                'Akaal' means beyond Time (Kaal). 'Moorat' means Form. God's existence is not subject to aging, history, or death. He is Eternal.
+                                <br><br>
+                                <b>Ajooni (Beyond Birth)</b><br>
+                                God does not take birth in a womb. He does not incarnate as a human or animal. He is formless and infinite.
+                                <br><br>
+                                <b>Saibhang (Self-Illuminated)</b><br>
+                                From the Sanskrit 'Svayambhu'. It means Self-Existent. God was not created by anyone else; He is the source of His own energy and light.
+                                <br><br>
+                                <b>Gur Prasad (By Guru's Grace)</b><br>
+                                This is the key to realization. The Infinite God is realized not through ego or intellectual effort, but through the Grace (Prasad) of the Enlightener (Guru).
+                                <br><br>
+                                <b>JAP (Chant / Meditate)</b><br>
+                                This is the title of the composition. It is an instruction to the soul: "Meditate on this Truth." It marks the beginning of the spiritual journey outlined in Japji Sahib.
+                                <br><br>
+                                The Mool Mantar defines the entire Sikh worldview. Guru Nanak Sahib explains that the Divine is one, eternal, fearless, and beyond time, yet fully present within creation. Human suffering arises from attachment to temporary identities and ego. When, through the Guru’s grace, a person understands this reality, life naturally shifts toward humility, courage, and compassion, aligning daily living with eternal truth.<br>
+                                Mool Mantar is not meant only to be recited.
+                                It is meant to be lived.
+                                A reminder of who we are,
+                                and what we are deeply connected to.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+  </div>
+
+  <footer class="bg-gray-50 border-t border-gray-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-gray-600 text-sm">
+                    © 2026 Gurbani Vyakhya. All rights reserved.
+                </div>
+                <div class="flex items-center gap-8">
+                    <a href="/#faqs" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">FAQs</a>
+                    <a href="mailto:info@gurbanivyakhya.com" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Contact</a>
+                    <a href="/privacy-policy" class="text-gray-600 hover:text-gray-900 text-sm transition-colors">Privacy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
